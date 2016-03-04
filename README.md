@@ -34,7 +34,7 @@ without running.)
 
   ./lua2c examples-lua/bisect.lua   # test
 
-== Related Work ==
+## Related Work ##
 
   * luac2c - This related effort by Hisham Muhammad [2] converts Lua
     bytecodes to C source, whereas this project converts Lua
