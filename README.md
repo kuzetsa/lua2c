@@ -1,6 +1,6 @@
 lua2c - converts Lua 5.1 source code to C code.
 
-== Description ==
+## Description ##
 
 This utility converts a given Lua source file into an equivalent C
 source file written in terms of Lua C API calls.  At least, this works
@@ -12,7 +12,7 @@ source to a Metalua-style [1] AST over which the compiler then
 operates.  lua2c does not require Metalua itself though since gg/mlp
 is bundled in the distribution and is written in pure Lua.
 
-== Usage ==
+## Usage ##
 
 Example usage:
 
@@ -58,7 +58,7 @@ without running.)
   * luac + BinToCee allow compilation of Lua source to bytecodes
     and/or embedding in a C file.
 
-== Potential Uses ==
+## Potential Uses ##
 
 I think this project not only is theoretically nice to have but
 has a number of potential uses:
@@ -78,7 +78,7 @@ has a number of potential uses:
     with sufficient care to run at native speeds.  Since it compiles
     to C, it will even work on CPUs where LuaJIT is not available.
 
-== Limitations / Status ==
+## Limitations / Status ##
 
 WARNING: This code passes much of the Lua 5.1 test suite [7] and can
 compile itself, but the code is new and there can still be errors.
@@ -102,7 +102,7 @@ optimizing the code generation.  Performance was 25%-75% of regular
 Lua when running a few tests [11], but hopefully future optimizations
 will improve that.
 
-== Lua 5.2 Notes ==
+## Lua 5.2 Notes ##
 
 Note: LuaFiveTwo (as of 5.2.0-work4) deprecates getfenv and setfenv,
 which eliminates one of the limitations above. LuaFiveTwo has new lua_arith
@@ -111,11 +111,11 @@ reimplement these functions. LuaFiveTwo also has new lua_yieldk, lua_callk,
 and lua_pcallk functions for coroutines and might help to implement
 coroutines in lua2c. 
 
-== Project Page ==
+## Project Page ##
 
 The project page is currently http://lua-users.org/wiki/LuaToCee .
 
-== Download ==
+## Download ##
 
   * Latest development source (recommended): http://github.com/davidm/lua2c/ .
     From here you can browse the source, download a tar/zip snapshot, or
@@ -123,13 +123,13 @@ The project page is currently http://lua-users.org/wiki/LuaToCee .
     git://github.com/davidm/lua2c.git}}".
   * Last release distribution: (see Project Page above)
 
-== Licensing ==
+## Licensing ##
 
 (c) 2008 David Manura.  Licensed under the same terms as Lua (MIT
 license).  See included LICENSE file for full licensing details.
 Please post any patches/improvements.
 
-== References ==
+## References ##
 
   * [1] Metalua AST - http://metalua.luaforge.net/manual006.html#toc17
   * [2] luac2c (previously named luatoc) - LuaList:2006-07/msg00144.html
